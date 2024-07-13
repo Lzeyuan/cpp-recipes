@@ -1,5 +1,7 @@
-add_rules("mode.debug", "mode.release")
+set_project("LearnOpenGL")
+set_version("1.0.0")
+set_languages("c++17")
 
-target("recipes")
-    set_kind("binary")
-    add_files("src/*.cpp")
+target("base")
+    set_kind("static")
+    add_files("base/*.cpp")
