@@ -4,4 +4,5 @@ set_languages("c++17")
 
 target("base")
     set_kind("static")
-    add_files("base/*.cpp")
+    
+includes("*/xmake.lua")

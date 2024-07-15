@@ -1,5 +1,5 @@
-#ifndef RECIPES_NONCOPYABLE_H_
-#define RECIPES_NONCOPYABLE_H_
+#ifndef RECIPES_THREAD_NONCOPYABLE_H_
+#define RECIPES_THREAD_NONCOPYABLE_H_
 
 namespace recipes {
 
@@ -15,4 +15,4 @@ protected:
 
 } // namespace recipes
 
-#endif // RECIPES_NONCOPYABLE_H_
+#endif // RECIPES_THREAD_NONCOPYABLE_H_
