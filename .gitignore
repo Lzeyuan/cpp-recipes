@@ -34,6 +34,8 @@
 # IDE
 # vscode
 .vscode/
+#clangd
+.cache/
 
 # Xmake cache
 .xmake/
