@@ -98,4 +98,20 @@ public:
 };
 ```
 
-# 3 观察者模式
+# 3 委托
+简易版C# delegate
+
+使用例子：
+```c++
+// 线程不安全
+// 没有注销功能
+recipes::Delegate<void()> delegate;
+delegate.Subscribe([]() { cout << "hello\n"; });
+delegate.Publish();
+
+// 线程安全
+// 智能指针控制生命周期
+recipes::DelegateThreadSafe<void()> delegate;
+auto token = delegate.Subscribe([]() { cout << "hello\n"; });
+delegate.Publish();
+```
